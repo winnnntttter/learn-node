@@ -1,7 +1,7 @@
 var fs = require('fs');
 var filterWord = '.'+process.argv[3];
 var result = [];
-fs.readdir(process.argv[2],function(err,list){
+fs.readdir(process.argv[2],function(err,list){//list,文件夹下文件名的数组
   if(err){
     return console.log(err);
   }else{
@@ -29,3 +29,5 @@ fs.readdir(process.argv[2],function(err,list){
 //     }
 //   });
 // });
+
+//node program4.js d:/nodejs/workspace/learn-node/ js
