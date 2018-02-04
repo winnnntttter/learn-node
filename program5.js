@@ -14,7 +14,7 @@ var path = require('path');
 // });
 module.exports = function(dir,exten,callback){
   var result = [];
-  fs.readdir(dir, function (err, files) {
+  fs.readdir(dir, function (err, files) {//callback
     if (err) return callback(err);
     files.forEach(function (file) {
       if (path.extname(file) === ('.' +exten)) {
